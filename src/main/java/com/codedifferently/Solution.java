@@ -18,6 +18,13 @@ public class Solution {
      * @return
      */
     public Integer[] numberFamily(Integer number, Integer[] possibleFamilyMembers){
-        return null;
+
+        for(int i=0;i<possibleFamilyMembers.length;i++){
+            if (number <= possibleFamilyMembers[0])
+                return new Integer[]{possibleFamilyMembers[0]};
+            if (number >= possibleFamilyMembers[possibleFamilyMembers.length - 1])
+                return new Integer[]{possibleFamilyMembers[possibleFamilyMembers.length - 1]};
+            }
+        return possibleFamilyMembers;
     }
 }
